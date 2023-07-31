@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" />
+    <title>BarCode Reader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Leitor de Código de barras</h1>
+            <h3>Utilize a câmera ou faça o upload de uma imagem</h3>
+        </div>
+        <div class="scanner-container">
+            <div id="interactive"></div>
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+        <div class="result-container">
+            <h3>OUTPUT: <span id="output"></span></h3> 
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/quagga/dist/quagga.min.js"></script>
+    <script type="application/javascript" src="script.js"></script>
+</body>
+</html>
